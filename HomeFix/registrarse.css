@@ -1,0 +1,120 @@
+
+
+/* Seccion de Registrarse */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.login-container {
+    width: 50%;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff4c4c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #007bff;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.iniciosesion-link a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+.image-container {
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    color: #000000;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.welcome-text h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.texto p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.texto a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.texto a:hover {
+    text-decoration: underline;
+}
