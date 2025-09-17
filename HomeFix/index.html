@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeFix</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    
+    <!-- Barra de Inicio -->
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-danger" style="height: 100px;">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand" href="#">
+                    <img src="./images/Logo.jpeg" alt="HomeFix" style="width: 80px; border-radius: 50%; ">
+                </a>
+                <!-- Links -->
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Trabaje con nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">¿Cómo funciona?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Ingresar</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contenedor de categorías -->
+    <div class="container-fluid bg-light py-2 sticky-top shadow-sm">
+        <div class="d-flex flex-wrap gap-2 justify-content-center">
+
+            <!-- Botón 1 -->
+            <div class="dropdown categoria-btn text-center">
+                <a class="d-flex flex-column align-items-center justify-content-center h-100" href="#" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="./images/1.png" class="categoria-img mb-1" alt="logo">
+                    <span>Asistencia técnica doméstica</span>
+                </a>
+                <!-- Dropdown -->
+                <ul class="dropdown-menu">
+                    <li class="dropdown-submenu">
+                        <a class="dropdown-item dropdown-toggle" href="#">Electrodomésticos y aparatos electrónicos</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Heladeras y freezers</a></li>
+                            <li><a class="dropdown-item" href="#">Lavarropas / Secarropas</a></li>
+                            <li><a class="dropdown-item" href="#">Lavavajillas</a></li>
+                            <li><a class="dropdown-item" href="#">Cocinas, anafes y hornos</a></li>
+                            <li><a class="dropdown-item" href="#">Microondas</a></li>
+                            <li><a class="dropdown-item" href="#">Aire acondicionado</a></li>
+                            <li><a class="dropdown-item" href="#">Calefacción a gas</a></li>
+                            <li><a class="dropdown-item" href="#">Adegas climatizadas</a></li>
+                            <li><a class="dropdown-item" href="#">Electrodomésticos pequeños (batidoras, cafeteras,
+                                    etc.)</a></li>
+                            <li><a class="dropdown-item" href="#">Aparatos de gimnasia</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                        <a class="dropdown-item dropdown-toggle" href="#">Audio, video y entretenimiento</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Televisores</a></li>
+                            <li><a class="dropdown-item" href="#">Home theater</a></li>
+                            <li><a class="dropdown-item" href="#">Equipos de sonido</a></li>
+                            <li><a class="dropdown-item" href="#">Auriculares</a></li>
+                            <li><a class="dropdown-item" href="#">DVD / Blu-Ray</a></li>
+                            <li><a class="dropdown-item" href="#">Camaras fotograficas</a></li>
+                            <li><a class="dropdown-item" href="#">Instrumentos musicales electricos</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                        <a class="dropdown-item dropdown-toggle" href="#">Informática y telecomunicaciones</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Computadoras de escritorio</a></li>
+                            <li><a class="dropdown-item" href="#">Notebooks / Laptops</a></li>
+                            <li><a class="dropdown-item" href="#">Tablets</a></li>
+                            <li><a class="dropdown-item" href="#">Celulares</a></li>
+                            <li><a class="dropdown-item" href="#">Teléfonos fijos / PABX</a></li>
+                            <li><a class="dropdown-item" href="#">Impresoras</a></li>
+                            <li><a class="dropdown-item" href="#">Cableado y redes</a></li>
+                            <li><a class="dropdown-item" href="#">Smartwatch</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                        <a class="dropdown-item dropdown-toggle" href="#">Otros aparatos eléctricos</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Generadores</a></li>
+                            <li><a class="dropdown-item" href="#">Cortadoras de césped</a></li>
+                            <li><a class="dropdown-item" href="#">Máquinas de coser</a></li>
+                            <li><a class="dropdown-item" href="#">Relojes</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Botón 2 -->
+            <div class="dropdown categoria-btn text-center">
+                <a class="d-flex flex-column align-items-center justify-content-center h-100" href="#" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="./images/2.png" class="categoria-img mb-1" alt="logo">
+                    <span>Reformas y reparaciones del hogar</span>
+                </a>
+                <!-- Dropdown -->
+                <ul class="dropdown-menu">
+                    <li class="dropdown-submenu">
+                        <a class="dropdown-item dropdown-toggle" href="#">Construcción y albañilería</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Albañilería general</a></li>
+                            <li><a class="dropdown-item" href="#">Hormigón y pisos</a></li>
+                            <li><a class="dropdown-item" href="#">Demoliciones</a></li>
+                            <li><a class="dropdown-item" href="#">Construcciones en madera (casas, cabañas, decks)</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                        <a class="dropdown-item dropdown-toggle" href="#">Instalaciones y mantenimiento</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Instalación y reparación de antenas</a></li>
+                            <li><a class="dropdown-item" href="#">Automatización del hogar</a></li>
+                            <li><a class="dropdown-item" href="#">Aislamiento térmico y acústico</a></li>
+                            <li><a class="dropdown-item" href="#">Agrimensura</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                        <a class="dropdown-item dropdown-toggle" href="#">Reparaciones específicas</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Cerrajería</a></li>
+                            <li><a class="dropdown-item" href="#">Vidriería</a></li>
+                            <li><a class="dropdown-item" href="#">Carpintería</a></li>
+                            <li><a class="dropdown-item" href="#">Afilado de herramientas</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                        <a class="dropdown-item dropdown-toggle" href="#">Diseño y decoración</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Decoración de interiores</a></li>
+                            <li><a class="dropdown-item" href="#">Adaptaciones para accesibilidad</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                        <a class="dropdown-item dropdown-toggle" href="#">Control y limpieza técnica</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Fumigación y desratización</a></li>
+                            <li><a class="dropdown-item" href="#">Desinfección</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                        <a class="dropdown-item dropdown-toggle" href="#">Jardinería y exteriores</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Jardinería y paisajismo</a></li>
+                            <li><a class="dropdown-item" href="#">Limpieza de vidrios en altura</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Botón 3 -->
+            <div class="dropdown categoria-btn text-center">
+                <a class="d-flex flex-column align-items-center justify-content-center h-100" href="#" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="./images/3.png" class="categoria-img mb-1" alt="logo">
+                    <span>Servicios domésticos</span>
+                </a>
+                <!-- Dropdown -->
+                <ul class="dropdown-menu">
+                    <li class="dropdown-submenu">
+                        <a class="dropdown-item dropdown-toggle" href="#">Limpieza y mantenimiento</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Limpieza general (diaristas)</a></li>
+                            <li><a class="dropdown-item" href="#">Limpieza de piscinas</a></li>
+                            <li><a class="dropdown-item" href="#">Limpieza de cortinas, persianas y alfombras</a></li>
+                            <li><a class="dropdown-item" href="#">Limpieza de tapetes</a></li>
+                            <li><a class="dropdown-item" href="#">Planchado</a></li>
+                            <li><a class="dropdown-item" href="#">Lavado de ropa</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                        <a class="dropdown-item dropdown-toggle" href="#">Cuidado personal y familiar</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Niñeras</a></li>
+                            <li><a class="dropdown-item" href="#">Gobernantas / Mayordomos</a></li>
+                            <li><a class="dropdown-item" href="#">Cocineros/as</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                        <a class="dropdown-item dropdown-toggle" href="#">Apoyo logístico</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Chofer particular (traslado de personas desde su
+                                    casa)</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                        <a class="dropdown-item dropdown-toggle" href="#">Mascotas</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Paseo de perros</a></li>
+                            <li><a class="dropdown-item" href="#">Adiestramiento</a></li>
+                            <li><a class="dropdown-item" href="#">Cuidado de mascotas en el hogar</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Botón 4 -->
+            <div class="dropdown categoria-btn text-center">
+                <a class="d-flex flex-column align-items-center justify-content-center h-100" href="#" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="" class="categoria-img mb-1" alt="logo">
+                    <span>Eventos</span>
+                </a>
+                <!-- Dropdown -->
+                <ul class="dropdown-menu">
+                    <li class="dropdown-submenu">
+                        <a class="dropdown-item dropdown-toggle" href="#">Alimentación y bebidas</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Parrilleros / Asadores</a></li>
+                            <li><a class="dropdown-item" href="#">Catering en domicilio</a></li>
+                            <li><a class="dropdown-item" href="#">Confitería y repostería temática</a></li>
+                            <li><a class="dropdown-item" href="#">Chocolatería</a></li>
+                            <li><a class="dropdown-item" href="#">Bartenders</a></li>
+                            <li><a class="dropdown-item" href="#">Sommeliers</a></li>
+                            <li><a class="dropdown-item" href="#">Food trucks (cuando sea contratado para domicilio o
+                                    barrio privado)</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                        <a class="dropdown-item dropdown-toggle" href="#">Animación y entretenimiento</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Animadores de fiestas</a></li>
+                            <li><a class="dropdown-item" href="#">DJs</a></li>
+                            <li><a class="dropdown-item" href="#">Bandas musicales y cantantes</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                        <a class="dropdown-item dropdown-toggle" href="#">Registro y comunicación</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Fotografía</a></li>
+                            <li><a class="dropdown-item" href="#">Filmación de videos</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                        <a class="dropdown-item dropdown-toggle" href="#">Ambientación y decoración</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Decoradores de espacios</a></li>
+                            <li><a class="dropdown-item" href="#">Floristas</a></li>
+                            <li><a class="dropdown-item" href="#">Souvenirs y recordatorios</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                        <a class="dropdown-item dropdown-toggle" href="#">Infraestructura</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Seguridad para eventos en domicilio o salón
+                                    privado</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Botón 5 -->
+            <div class="dropdown categoria-btn text-center">
+                <a class="d-flex flex-column align-items-center justify-content-center h-100" href="#" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="" class="categoria-img mb-1" alt="logo">
+                    <span>Estilo y Estética</span>
+                </a>
+                <!-- Dropdown -->
+                <ul class="dropdown-menu">
+                    <li class="dropdown-submenu">
+                        <a class="dropdown-item dropdown-toggle" href="#">Estética capilar y facial</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Peluquería</a></li>
+                            <li><a class="dropdown-item" href="#">Barbería</a></li>
+                            <li><a class="dropdown-item" href="#">Diseño de cejas</a></li>
+                            <li><a class="dropdown-item" href="#">Extensiones de pestañas</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                        <a class="dropdown-item dropdown-toggle" href="#">Cuidado corporal</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Depilación</a></li>
+                            <li><a class="dropdown-item" href="#">Bronceado</a></li>
+                            <li><a class="dropdown-item" href="#">Estética corporal básica</a></li>
+                            <li><a class="dropdown-item" href="#">Podología</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                        <a class="dropdown-item dropdown-toggle" href="#">Uñas y maquillaje</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Manicuría</a></li>
+                            <li><a class="dropdown-item" href="#">Pedicuría</a></li>
+                            <li><a class="dropdown-item" href="#">Maquillaje</a></li>
+                            <li><a class="dropdown-item" href="#">Micropigmentación</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                        <a class="dropdown-item dropdown-toggle" href="#">Vestimenta y accesorios</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Sastrería a domicilio (arreglos de ropa en casa)</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#">Corte y confección a medida</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Botón 6 -->
+            <div class="dropdown categoria-btn text-center dropdown-left">
+                <a class="d-flex flex-column align-items-center justify-content-center h-100" href="#" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="" class="categoria-img mb-1" alt="logo">
+                    <span>Psicología y Bienestar</span>
+                </a>
+                <!-- Dropdown -->
+                <ul class="dropdown-menu">
+                    <li class="dropdown-submenu dropdown-left">
+                        <a class="dropdown-item dropdown-toggle" href="#">Psicología y desarrollo personal</a>
+                        <ul class="dropdown-menu dropdown-menu-left">
+                            <li><a class="dropdown-item" href="#">Psicólogos a domicilio</a></li>
+                            <li><a class="dropdown-item" href="#">Psicoanalistas</a></li>
+                            <li><a class="dropdown-item" href="#">Coaching de vida / deportivo</a></li>
+                            <li><a class="dropdown-item" href="#">Asesoría familiar y de pareja</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-submenu dropdown-left">
+                        <a class="dropdown-item dropdown-toggle" href="#">Nutrición y terapias alternativas</a>
+                        <ul class="dropdown-menu dropdown-menu-left">
+                            <li><a class="dropdown-item" href="#">Nutricionistas a domicilio</a></li>
+                            <li><a class="dropdown-item" href="#">Terapias alternativas (reiki, masajes, etc.)</a></li>
+                            <li><a class="dropdown-item" href="#">Hipnoterapia</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Botón 7 -->
+            <div class="dropdown categoria-btn text-center dropdown-left">
+                <a class="d-flex flex-column align-items-center justify-content-center h-100" href="#" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="" class="categoria-img mb-1" alt="logo">
+                    <span>Cuidado y servicios para mascotas</span>
+                </a>
+                <!-- Dropdown -->
+                <ul class="dropdown-menu">
+                    <li class="dropdown-submenu dropdown-left">
+                        <a class="dropdown-item dropdown-toggle" href="#">Paseo y ejercicio</a>
+                        <ul class="dropdown-menu dropdown-menu-left">
+                            <li><a class="dropdown-item" href="#">Paseo de perros</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-submenu dropdown-left">
+                        <a class="dropdown-item dropdown-toggle" href="#">Adiestramiento y comportamiento</a>
+                        <ul class="dropdown-menu dropdown-menu-left">
+                            <li><a class="dropdown-item" href="#">Adiestradores de perros</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-submenu dropdown-left">
+                        <a class="dropdown-item dropdown-toggle" href="#">Cuidado temporal y asistencia</a>
+                        <ul class="dropdown-menu dropdown-menu-left">
+                            <li><a class="dropdown-item" href="#">Cuidado de mascotas en el hogar</a></li>
+                            <li><a class="dropdown-item" href="#">Alojamiento de mascotas en casas particulares</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Botón 8 -->
+            <div class="dropdown categoria-btn text-center dropdown-left">
+                <a class="d-flex flex-column align-items-center justify-content-center h-100" href="#" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="" class="categoria-img mb-1" alt="logo">
+                    <span>Autos y Mecánica</span>
+                </a>
+                <!-- Dropdown -->
+                <ul class="dropdown-menu">
+                    <li class="dropdown-submenu dropdown-left">
+                        <a class="dropdown-item dropdown-toggle" href="#">Mecánica general</a>
+                        <ul class="dropdown-menu dropdown-menu-left">
+                            <li><a class="dropdown-item" href="#">Reparación de motor</a></li>
+                            <li><a class="dropdown-item" href="#">Cambio de aceite y filtros</a></li>
+                            <li><a class="dropdown-item" href="#">Frenos y suspensión</a></li>
+                            <li><a class="dropdown-item" href="#">Revisión general</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-submenu dropdown-left">
+                        <a class="dropdown-item dropdown-toggle" href="#">Electricidad y electrónica automotriz</a>
+                        <ul class="dropdown-menu dropdown-menu-left">
+                            <li><a class="dropdown-item" href="#">Instalación y reparación de alarmas</a></li>
+                            <li><a class="dropdown-item" href="#">Audio automotor</a></li>
+                            <li><a class="dropdown-item" href="#">Revisión de sistema eléctrico</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-submenu dropdown-left">
+                        <a class="dropdown-item dropdown-toggle" href="#">Chapa y pintura</a>
+                        <ul class="dropdown-menu dropdown-menu-left">
+                            <li><a class="dropdown-item" href="#">Reparación de carrocería</a></li>
+                            <li><a class="dropdown-item" href="#">Pintura</a></li>
+                            <li><a class="dropdown-item" href="#">Pulido y detallado</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-submenu dropdown-left">
+                        <a class="dropdown-item dropdown-toggle" href="#">Auxilio y neumáticos</a>
+                        <ul class="dropdown-menu dropdown-menu-left">
+                            <li><a class="dropdown-item" href="#">Gomería</a></li>
+                            <li><a class="dropdown-item" href="#">Cambio de neumáticos</a></li>
+                            <li><a class="dropdown-item" href="#">Auxilio mecánico / grúa</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Botón 9 -->
+            <div class="dropdown categoria-btn text-center dropdown-left">
+                <a class="d-flex flex-column align-items-center justify-content-center h-100" href="#" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="" class="categoria-img mb-1" alt="logo">
+                    <span>Educación</span>
+                </a>
+                <!-- Dropdown -->
+                <ul class="dropdown-menu">
+                    <li class="dropdown-submenu dropdown-left">
+                        <a class="dropdown-item dropdown-toggle" href="#">Clases particulares escolares</a>
+                        <ul class="dropdown-menu dropdown-menu-left">
+                            <li><a class="dropdown-item" href="#">Nivel primario</a></li>
+                            <li><a class="dropdown-item" href="#">Nivel secundario</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-submenu dropdown-left">
+                        <a class="dropdown-item dropdown-toggle" href="#">Clases superiores</a>
+                        <ul class="dropdown-menu dropdown-menu-left">
+                            <li><a class="dropdown-item" href="#">Nivel terciario</a></li>
+                            <li><a class="dropdown-item" href="#">Nivel universitario</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-submenu dropdown-left">
+                        <a class="dropdown-item dropdown-toggle" href="#">Música y arte</a>
+                        <ul class="dropdown-menu dropdown-menu-left">
+                            <li><a class="dropdown-item" href="#">Clases de guitarra</a></li>
+                            <li><a class="dropdown-item" href="#">Clases de piano</a></li>
+                            <li><a class="dropdown-item" href="#">Clases de canto</a></li>
+                            <li><a class="dropdown-item" href="#">Clases de batería</a></li>
+                            <li><a class="dropdown-item" href="#">Clases de violín</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-submenu dropdown-left">
+                        <a class="dropdown-item dropdown-toggle" href="#">Idiomas y apoyo académico</a>
+                        <ul class="dropdown-menu dropdown-menu-left">
+                            <li><a class="dropdown-item" href="#">Clases de inglés</a></li>
+                            <li><a class="dropdown-item" href="#">Clases de portugués</a></li>
+                            <li><a class="dropdown-item" href="#">Clases de apoyo escolar en materias específicas</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Botón 10 -->
+            <div class="dropdown categoria-btn text-center dropdown-left">
+                <a class="d-flex flex-column align-items-center justify-content-center h-100" href="#" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="" class="categoria-img mb-1" alt="logo">
+                    <span>Técnicos Especializados</span>
+                </a>
+                <!-- Dropdown -->
+                <ul class="dropdown-menu">
+                    <li class="dropdown-submenu dropdown-left">
+                        <a class="dropdown-item dropdown-toggle" href="#">Plomeros / Fontaneros</a>
+                        <ul class="dropdown-menu dropdown-menu-left">
+                            <li><a class="dropdown-item" href="#">Reparación de cañerías y grifería</a></li>
+                            <li><a class="dropdown-item" href="#">Instalación de sanitarios</a></li>
+                            <li><a class="dropdown-item" href="#">Reparación e instalación de bombas de agua</a></li>
+                            <li><a class="dropdown-item" href="#">Desobstrucción de desagües y cañerías</a></li>
+                            <li><a class="dropdown-item" href="#">Instalación y mantenimiento de termotanques</a></li>
+                            <li><a class="dropdown-item" href="#">Reparación de calefones a gas relacionados con
+                                    agua</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-submenu dropdown-left">
+                        <a class="dropdown-item dropdown-toggle" href="#">Gasistas matriculados</a>
+                        <ul class="dropdown-menu dropdown-menu-left">
+                            <li><a class="dropdown-item" href="#">Instalación y reparación de estufas, calefones y
+                                    anafes a gas</a></li>
+                            <li><a class="dropdown-item" href="#">Revisión de cañerías de gas</a></li>
+                            <li><a class="dropdown-item" href="#">Detección y reparación de fugas</a></li>
+                            <li><a class="dropdown-item" href="#">Mantenimiento preventivo de instalaciones
+                                    domiciliarias de gas</a></li>
+                            <li><a class="dropdown-item" href="#">Certificación de seguridad en instalaciones a gas</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-submenu dropdown-left">
+                        <a class="dropdown-item dropdown-toggle" href="#">Electricistas</a>
+                        <ul class="dropdown-menu dropdown-menu-left">
+                            <li><a class="dropdown-item" href="#">Reparación de cortocircuitos</a></li>
+                            <li><a class="dropdown-item" href="#">Instalación de enchufes, interruptores y tomas</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#">Instalación de luminarias y artefactos eléctricos</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#">Mantenimiento y reparación de cableado interno</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#">Revisiones y mantenimiento de tableros eléctricos</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#">Instalación de sistemas de iluminación y tomas
+                                    especiales</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Barra de búsqueda -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid justify-content-center align-items-center">
+            <p class="mb-0 me-3">Busca un profesional o servicio</p>
+
+            <form class="d-flex align-items-center" role="search">
+                <input class="form-control me-2" type="search" placeholder="¿Qué Necesitas?" aria-label="Buscar"
+                    style="height: 35px; padding: 0 10px;">
+                <button class="btn btn-outline-success" type="submit"
+                    style="height: 35px; padding: 0 15px;">Buscar</button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- Carrusel de empleados -->
+    <div class="container-fluid my-4">
+        <div class="empleados-carousel-wrapper position-relative">
+
+            <!-- Flechas de navegación -->
+            <button class="carousel-arrow left" onclick="scrollLeft()">&lt;</button>
+            <button class="carousel-arrow right" onclick="scrollRight()">&gt;</button>
+
+            <!-- Contenedor de tarjetas con scroll horizontal -->
+            <div class="d-flex overflow-auto empleados-carousel gap-3">
+                <!-- Tarjeta ejemplo -->
+                <div class="card empleado-card text-center">
+                    <img src="perfil.jpg" class="card-img-top perfil-img" alt="Foto de perfil">
+                    <div class="card-body">
+                        <h5 class="card-title">Nombre de empleado</h5>
+                        <p class="card-text">Información</p>
+                    </div>
+                </div>
+
+                <div class="card empleado-card text-center">
+                    <img src="perfil.jpg" class="card-img-top perfil-img" alt="Foto de perfil">
+                    <div class="card-body">
+                        <h5 class="card-title">Nombre de empleado</h5>
+                        <p class="card-text">Información</p>
+                    </div>
+                </div>
+
+                <div class="card empleado-card text-center">
+                    <img src="perfil.jpg" class="card-img-top perfil-img" alt="Foto de perfil">
+                    <div class="card-body">
+                        <h5 class="card-title">Nombre de empleado</h5>
+                        <p class="card-text">Información</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores libero harum molestias quasi laboriosam asperiores
+    omnis architecto eaque inventore animi corrupti magnam quisquam quidem natus mollitia tempora, facere culpa tempore?
+    Optio dignissimos dolores odio vel rem. Quae nemo maxime sunt necessitatibus corporis magnam corrupti at tempora,
+    saepe ipsum architecto eius! Tempora quod laboriosam enim! Ea, corporis ipsa vel incidunt mollitia quo laborum
+    voluptate ad cupiditate voluptatibus, repellendus quaerat quasi iusto architecto magnam unde maxime consequuntur
+    vero minus rem doloribus harum reprehenderit illo nam! Porro ducimus voluptatibus dolorum nam dolore vero minima
+    facere? Voluptate saepe repellat nostrum debitis odit laboriosam non, rerum corporis cum earum sunt qui provident
+    soluta aliquam quisquam accusantium? Porro pariatur, quis, veritatis aperiam, rerum deleniti autem adipisci
+    asperiores beatae cumque quisquam necessitatibus aspernatur ea delectus hic exercitationem. Impedit sunt in minima
+    eos veniam, minus exercitationem harum provident numquam, ullam ipsam unde distinctio? Quam aperiam alias,
+    recusandae optio ducimus, fugiat ipsa vero minima quos soluta voluptatibus atque perferendis laborum odit provident
+    quidem id at nemo ut? Aliquam iure magnam ratione consectetur voluptatem, nam veniam facere eligendi fugiat aliquid
+    debitis odio. Voluptate officia saepe, similique molestias vel fugiat dolorem commodi unde, ea aut, quis possimus
+    odio cupiditate id quas doloremque eius nulla cum sunt. Facere earum nesciunt optio a dolor! Facilis libero, modi
+    magni culpa sequi, in sint provident et ea maiores nesciunt ratione, deleniti quis consectetur amet dolore? Placeat
+    porro perspiciatis, expedita pariatur illum modi minima cupiditate earum iure! Laboriosam odio amet ea dolores
+    quidem aliquam necessitatibus facere atque, ad dolorum quis! Minus rerum quos maxime voluptatibus autem ipsum,
+    reiciendis perspiciatis unde modi, iure, temporibus pariatur corrupti! Ex, ipsam voluptatibus hic nulla optio earum.
+    Corrupti saepe provident tenetur cupiditate libero! Placeat ab cumque, repellat sit rem quibusdam recusandae debitis
+    doloremque voluptatibus quia nostrum a accusantium reprehenderit obcaecati voluptate nisi tempora repudiandae
+    cupiditate sed. Provident est quam porro et repellat doloribus velit, illo iste sapiente eum minus fuga fugiat,
+    autem quidem. Vel illo odit obcaecati magni, ad minima dolor eum consectetur iure quis aut aperiam possimus repellat
+    laboriosam veniam! Dicta blanditiis rerum soluta reiciendis autem ducimus unde quibusdam totam, quod nesciunt porro
+    laborum delectus eum corporis recusandae. Eveniet odit molestias nulla? Tenetur facilis ipsum magni at distinctio?
+    Maiores dolorum recusandae iusto architecto veritatis mollitia officiis facilis quo quos, vel quod nemo
+    reprehenderit ipsum sint velit natus culpa, optio voluptates ad quaerat, nam eligendi animi sunt tempora? Dolorem
+    aspernatur accusantium culpa ducimus minus sapiente quasi consequatur impedit eaque molestias. Possimus eveniet
+    aliquam sequi velit officia illo ratione at, nisi doloribus, iusto eligendi fuga neque optio eaque odit fugit esse
+    itaque laborum magnam! Beatae modi, distinctio sint non quisquam a eos voluptatum hic alias excepturi praesentium
+    error nam nemo recusandae eius eligendi voluptatibus possimus porro. Nobis, impedit laudantium quam natus quidem
+    magnam aspernatur enim. Facere totam earum eaque quae aliquam, quod aperiam quos perspiciatis nihil dolorem debitis
+    deserunt veniam maxime quia nobis, numquam hic dicta voluptatem sint aspernatur itaque, necessitatibus sit. Aperiam
+    dolores repellendus et, nostrum aliquid nemo laudantium rerum, quidem sed aspernatur ipsum dicta. Distinctio nam
+    iste minima quod odit in dolor earum vel voluptatem debitis, consectetur harum voluptatibus voluptates aperiam
+    molestias laboriosam illum. Officiis cum eaque fuga ipsa necessitatibus. Dolores accusamus expedita, ad dolor amet
+    eveniet suscipit! Suscipit natus aliquam minima. Aliquam accusamus inventore reprehenderit illo accusantium
+    obcaecati nesciunt vel ducimus vitae rerum! Ipsum esse minima placeat ad pariatur nostrum illum suscipit odio,
+    aspernatur cum? Eaque ad error deleniti minus magnam mollitia aspernatur culpa a aliquam illo natus quod animi id
+    quae ullam quaerat soluta doloremque, quam nobis? Nemo eveniet dignissimos quasi soluta mollitia eaque ipsum, harum
+    in aliquam officia ea veritatis provident omnis alias numquam deserunt non tempora assumenda, quo quia quisquam
+    asperiores molestiae! Deleniti nesciunt itaque enim magnam amet cumque, ullam perspiciatis ipsa ab voluptatum odio
+    sequi similique aliquam dolorem voluptas iure veniam exercitationem ipsam, quis iste nemo. Deleniti, earum
+    voluptatum consequatur illo quas modi maxime dolores sed magni. Expedita quasi a unde enim officiis maiores deleniti
+    harum fugiat qui, voluptas provident omnis tenetur veritatis dolore earum dolorem deserunt repellat quibusdam.
+    Facilis sunt ab accusamus aut eos illo eius voluptate tempore? Eum ab neque perspiciatis alias! Facere distinctio
+    perspiciatis laborum enim eligendi dolore debitis similique! Nam, est nulla. Asperiores aut animi autem ducimus
+    corrupti, in a suscipit iure officia aliquam eos, excepturi officiis doloribus iusto quos dolorem rem magni impedit
+    blanditiis? Similique atque ducimus repudiandae, qui quis deserunt quae consectetur dicta dolores animi nam quisquam
+    optio voluptatem tenetur accusamus unde odit ullam facere, at adipisci suscipit. Officiis eaque placeat quam omnis
+    reprehenderit ipsum tempore molestiae aperiam reiciendis velit, sit pariatur laudantium dignissimos, natus eius.
+    Consectetur atque iste, itaque nihil hic fugit sint magni, neque suscipit odio minus possimus veniam nisi tempore
+    rem quae unde voluptatem! Tempore nisi alias asperiores facilis voluptatibus autem quibusdam a illo possimus fugit
+    rerum aliquid eveniet in doloribus ipsam aliquam, inventore reiciendis rem quaerat quae, perspiciatis, natus cum
+    totam libero. Illo maxime ratione aut laborum, adipisci consequatur. Accusantium odio, harum sunt omnis ex qui quis
+    cupiditate cumque ea exercitationem, minus esse aliquid, pariatur facilis. Tempore reiciendis totam, soluta
+    reprehenderit in assumenda neque? Id facilis quae mollitia praesentium dolor debitis natus ratione sapiente quisquam
+    a temporibus saepe incidunt, esse exercitationem voluptates dolore dicta beatae? Omnis quod explicabo dignissimos
+    eos molestiae. Explicabo laborum aliquam voluptatibus recusandae iure quod quia minima est veniam totam? Reiciendis,
+    placeat unde ratione, neque, nam sed necessitatibus commodi accusamus cumque velit nulla odio dolore fugit quas
+    excepturi tempora omnis praesentium eveniet accusantium quaerat voluptatum sit sint dolorum suscipit? A porro, omnis
+    hic perspiciatis, nam, quia beatae consectetur numquam molestiae voluptates officia dolore modi alias deserunt
+    nesciunt quidem dicta in! Accusantium dolore praesentium molestiae sed eum, distinctio, neque voluptatum sunt sit
+    soluta temporibus sapiente ducimus fugit provident porro rem nemo optio ad doloremque ipsam excepturi ab unde
+    obcaecati. Rem nisi tempora tempore sint atque vitae quisquam inventore vel nam quae cum velit doloremque, aperiam
+    soluta facilis quasi unde corrupti veritatis quidem quam reiciendis optio laudantium! Error sapiente provident
+    similique aliquid laborum? Minus.
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./scripts.js"></script>
+</body>
+
+</html>
