@@ -1,0 +1,71 @@
+/* Barra superior */
+#barra_superior {
+  height: 80px;
+}
+
+/* Estilo del botón*/
+.categoria-btn {
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  border-radius: 12px;
+  transition: all 0.2s ease-in-out;
+  background-color: #fff;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Icono dentro del botón */
+.categoria-img {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+  margin-bottom: 4px;
+}
+
+
+/* Texto */
+.categoria-btn span {
+  font-size: 12px;
+  line-height: 1.2;
+  text-align: center;
+  display: block;
+  white-space: normal;
+  word-break: break-word;
+}
+
+/* Submenú lateral derecho */
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-left: 0.1rem;
+  margin-right: 0.1rem;
+}
+
+/* Submenú que abre a la izquierda */
+.dropdown-menu-left {
+  left: auto;
+  right: 100%;
+  top: 0;
+}
+
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+}
+
+.dropdown-submenu.dropdown-left>.dropdown-menu {
+  left: auto;
+  right: 100%;
+}
