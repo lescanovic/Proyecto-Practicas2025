@@ -16,4 +16,3 @@ La web organiza los servicios en categorías y permite la gestión de empleados 
 ## Instrucciones para clonar
 ```bash
 git clone https://github.com/lescanovic/Proyecto-Practicas2025.git
-cd Proyecto-Practicas2025
