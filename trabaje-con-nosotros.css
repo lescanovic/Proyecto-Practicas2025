@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+}
+.btn-trabaje-con-nosotros {
+  margin: 20px;
+  text-decoration: none;
+  width: 100%;
+  padding: 10px;
+  background-color: #4c85ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.section-trabaje {
+    text-align: center;
+    margin: 80px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(44, 64, 176);
+
+}
+h2{
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Espacio entre tarjetas */
+  justify-content: center; /* Centra las tarjetas */
+}
+.card {
+  background:#93aadc ;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 30px 25px;
+  width: 280px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-header {
+  border-radius:30px ;
+  font-weight: bold;
+  font-size: 1.2rem;
+  background: #ffffff;
+  border-bottom: 2px solid #ddd;
+}
+
+.card-title {
+  color: #ffffff;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.btn-postulate{
+  margin: 20px;
+  text-decoration: none;
+  width: 100%;
+  padding: 10px;  
+  background-color: #4c85ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+
+}
