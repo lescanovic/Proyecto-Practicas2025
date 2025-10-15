@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeFix - Servicios a Domicilio</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/inicio.css">
+</head>
+
+<body>
+    <!-- Barra de navegación -->
+    <header>
+        <div class="d-flex justify-content-center">
+            <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+                <!-- Logo -->
+                <a class="navbar-brand" href="./inicio.html" title="HomeFix - Servicios a Domicilio">
+                    <img src="./images/Logo.jpeg" alt="HomeFix Logo">
+                </a>
+                <!-- Botón hamburguesa -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Menú de navegación -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./trabaje-con-nosotros.html">Trabajá con nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./como-funciona.html">¿Cómo funciona?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./iniciar-sesion.html">Ingresar</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Contenedor de categorías -->
+    <div class="categorias-container sticky-top">
+        <div class="container-fluid py-2">
+            <div class="d-flex flex-wrap gap-2 justify-content-center">
+                <!-- Técnicos Especializados -->
+                <div class="dropdown">
+                    <div class="categoria-btn d-flex flex-column align-items-center justify-content-center position-relative"
+                        role="button" data-bs-toggle="dropdown">
+                        <img src="./images/Categorías/Técnicos Especializados.png" alt="" class="icono">
+                        <span class="texto">Técnicos Especializados</span>
+                    </div>
+                    <ul class="dropdown-menu" style="width: 250px;">
+                        <!-- Plomeros / Fontaneros -->
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item" href="#">Plomeros / Fontaneros</a>
+                            <ul class="dropdown-menu special">
+                                <p class="m-0 mb-1">• Reparación de cañerías y grifería</p>
+                                <p class="m-0 mb-1">• Instalación de sanitarios</p>
+                                <p class="m-0 mb-1">• Reparación e instalación de bombas de agua</p>
+                                <p class="m-0 mb-1">• Desobstrucción de desagües y cañerías</p>
+                                <p class="m-0 mb-1">• Instalación y mantenimiento de termotanques</p>
+                                <button class="btn-profesionales">Ver Profesionales</button>
+                            </ul>
+                        </li>
+                        <!-- Gasistas matriculados -->
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item" href="#">Gasistas matriculados</a>
+                            <ul class="dropdown-menu special">
+                                <p class="m-0 mb-1">• Instalación y reparación de estufas, calefones y anafes a gas</p>
+                                <p class="m-0 mb-1">• Revisión de cañerías de gas</p>
+                                <p class="m-0 mb-1">• Detección y reparación de fugas</p>
+                                <p class="m-0 mb-1">• Mantenimiento preventivo de instalaciones domiciliarias de gas</p>
+                                <p class="m-0 mb-1">• Certificación de seguridad en instalaciones a gas</p>
+                                <button class="btn-profesionales">Ver Profesionales</button>
+                            </ul>
+                        </li>
+                        <!-- Electricistas -->
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item" href="#">Electricistas</a>
+                            <ul class="dropdown-menu special">
+                                <p class="m-0 mb-1">• Reparación de cortocircuitos</p>
+                                <p class="m-0 mb-1">• Instalación de enchufes, interruptores y tomas</p>
+                                <p class="m-0 mb-1">• Instalación de luminarias y artefactos eléctricos</p>
+                                <p class="m-0 mb-1">• Mantenimiento y reparación de cableado interno</p>
+                                <p class="m-0 mb-1">• Revisiones y mantenimiento de tableros eléctricos</p>
+                                <button class="btn-profesionales">Ver Profesionales</button>
+                            </ul>
+                        </li>
+                    </ul>
+                    </li>
+                    </ul>
+                </div>
+                <!-- Reformas y reparaciones del hogar -->
+                <div class="dropdown">
+                    <a class="categoria-btn d-flex flex-column align-items-center justify-content-center position-relative"
+                        href="#" role="button" data-bs-toggle="dropdown">
+                        <img src="./images/Categorías/Reformas y reparaciones.png" alt="" class="icono">
+                        <span class="texto">Reformas y reparaciones</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item" href="#">
+                                <i class="me-2"></i>Construcción y albañilería
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Albañilería general</a></li>
+                                <li><a class="dropdown-item" href="#">Hormigón y pisos</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Asistencia técnica doméstica -->
+                <div class="dropdown">
+                    <a class="categoria-btn d-flex flex-column align-items-center justify-content-center position-relative"
+                        href="#" role="button" data-bs-toggle="dropdown">
+                        <img src="./images/Categorías/Asistencia técnica doméstica.png" alt="" class="icono">
+                        <span class="texto">Asistencia técnica doméstica</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item" href="#">
+                                <i class="me-2"></i>Electrodomésticos y aparatos electrónicos
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Heladeras y freezers</a></li>
+                                <li><a class="dropdown-item" href="#">Lavarropas / Secarropas</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Servicios domésticos -->
+                <div class="dropdown">
+                    <a class="categoria-btn d-flex flex-column align-items-center justify-content-center position-relative"
+                        href="#" role="button" data-bs-toggle="dropdown">
+                        <img src="./images/Categorías/Servicios domésticos.png" alt="" class="icono">
+                        <span class="texto">Servicios domésticos</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item" href="#">
+                                <i class="me-2"></i>Limpieza y mantenimiento
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Limpieza general (Trabajadores de hogar)</a></li>
+                                <li><a class="dropdown-item" href="#">Limpieza de piscinas</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Educación -->
+                <div class="dropdown">
+                    <a class="categoria-btn d-flex flex-column align-items-center justify-content-center position-relative"
+                        href="#" role="button" data-bs-toggle="dropdown">
+                        <img src="./images/Categorías/Educación.png" alt="" class="icono">
+                        <span class="texto texto-alt">Educación</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item" href="#">
+                                <i class="me-2"></i>Clases particulares escolares
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Nivel primario</a></li>
+                                <li><a class="dropdown-item" href="#">Nivel secundario</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Estilo y Estética -->
+                <div class="dropdown">
+                    <a class="categoria-btn d-flex flex-column align-items-center justify-content-center position-relative"
+                        href="#" role="button" data-bs-toggle="dropdown">
+                        <img src="./images/Categorías/Estilo y estética.png" alt="" class="icono">
+                        <span class="texto texto-alt">Estilo y Estética</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item" href="#">
+                                <i class="me-2"></i>Estética capilar y facial
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Peluquería</a></li>
+                                <li><a class="dropdown-item" href="#">Barbería</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Cuidado y servicios para mascotas -->
+                <div class="dropdown">
+                    <a class="categoria-btn d-flex flex-column align-items-center justify-content-center position-relative"
+                        href="#" role="button" data-bs-toggle="dropdown">
+                        <img src="./images/Categorías/Cuidado y mascotas.png" alt="" class="icono">
+                        <span class="texto">Cuidado y Mascotas</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item" href="#">
+                                <i class="me-2" href="#"></i>Paseo y ejercicio
+                            </a>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item" href="#">
+                                <i class="me-2"></i>Adiestramiento y comportamiento
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Eventos -->
+                <div class="dropdown">
+                    <a class="categoria-btn d-flex flex-column align-items-center justify-content-center position-relative"
+                        href="#" role="button" data-bs-toggle="dropdown">
+                        <img src="./images/Categorías/Eventos.png" alt="" class="icono">
+                        <span class="texto texto-alt">Eventos</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item" href="#">
+                                <i class="me-2" href="#"></i>Alimentación y bebidas
+                            </a>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item" href="#">
+                                <i class="me-2" href="#"></i>Animación y entretenimiento
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Barra de búsqueda -->
+    <section class="search-section">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-12">
+                    <form class="d-flex flex-column flex-md-row gap-3 justify-content-center align-items-center">
+                        <h5 class="mb-0 text-nowrap">Busca un profesional o servicio</h5>
+                        <input class="search-input" type="search" placeholder="¿Qué necesitas?"
+                            aria-label="Buscar servicio">
+                        <button class="search-btn" type="submit">
+                            <i class="me-2"></i>Buscar profesional
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Carrusel de empleados destacados -->
+
+    <div class="container carrusel">
+        <div class="card-wrapper">
+            <ul class="card-list">
+                <li class="card-item">
+                    <a href="#" class="card-link">
+                        <img src="./images/Carrusel/Trabajador.jpg" alt="Card Image" class="card-image">
+                        <p class="badge">Nombre</p>
+                        <h2 class="card-title">Lorem ipsum dolor sit, amet consectetur adipisicing.</h2>
+                        <button class="card-button"><img src="./images/Carrusel/arrow forward.png" alt=""></button>
+                    </a>
+                </li>
+
+
+            </ul>
+        </div>
+    </div>
+
+
+
+    <!-- Sección de características -->
+    <section class="content-section">
+        <div class="container">
+            <h3 class="text-center mb-5">¿Por qué elegir HomeFix?</h3>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <i class="fas fa-shield-check feature-icon"></i>
+                        <h5>Profesionales verificados</h5>
+                        <p>Todos nuestros técnicos tienen antecedentes verificados y certificaciones válidas.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <i class="fas fa-clock feature-icon"></i>
+                        <h5>Servicio rápido</h5>
+                        <p>Agenda citas cuando te convenga. Muchos servicios disponibles el mismo día.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <i class="fas fa-money-bill-wave feature-icon"></i>
+                        <h5>Precios transparentes</h5>
+                        <p>Cotización clara antes de contratar. Sin costos ocultos ni sorpresas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores libero harum molestias quasi laboriosam asperiores
+    omnis architecto eaque inventore animi corrupti magnam quisquam quidem natus mollitia tempora, facere culpa tempore?
+    Optio dignissimos dolores odio vel rem. Quae nemo maxime sunt necessitatibus corporis magnam corrupti at tempora,
+    saepe ipsum architecto eius! Tempora quod laboriosam enim! Ea, corporis ipsa vel incidunt mollitia quo laborum
+    voluptate ad cupiditate voluptatibus, repellendus quaerat quasi iusto architecto magnam unde maxime consequuntur
+    vero minus rem doloribus harum reprehenderit illo nam! Porro ducimus voluptatibus dolorum nam dolore vero minima
+    facere? Voluptate saepe repellat nostrum debitis odit laboriosam non, rerum corporis cum earum sunt qui provident
+    soluta aliquam quisquam accusantium? Porro pariatur, quis, veritatis aperiam, rerum deleniti autem adipisci
+    asperiores beatae cumque quisquam necessitatibus aspernatur ea delectus hic exercitationem. Impedit sunt in minima
+    eos veniam, minus exercitationem harum provident numquam, ullam ipsam unde distinctio? Quam aperiam alias,
+    recusandae optio ducimus, fugiat ipsa vero minima quos soluta voluptatibus atque perferendis laborum odit provident
+    quidem id at nemo ut? Aliquam iure magnam ratione consectetur voluptatem, nam veniam facere eligendi fugiat aliquid
+    debitis odio. Voluptate officia saepe, similique molestias vel fugiat dolorem commodi unde, ea aut, quis possimus
+    odio cupiditate id quas doloremque eius nulla cum sunt. Facere earum nesciunt optio a dolor! Facilis libero, modi
+    magni culpa sequi, in sint provident et ea maiores nesciunt ratione, deleniti quis consectetur amet dolore? Placeat
+    porro perspiciatis, expedita pariatur illum modi minima cupiditate earum iure! Laboriosam odio amet ea dolores
+    quidem aliquam necessitatibus facere atque, ad dolorum quis! Minus rerum quos maxime voluptatibus autem ipsum,
+    reiciendis perspiciatis unde modi, iure, temporibus pariatur corrupti! Ex, ipsam voluptatibus hic nulla optio earum.
+    Corrupti saepe provident tenetur cupiditate libero! Placeat ab cumque, repellat sit rem quibusdam recusandae debitis
+    doloremque voluptatibus quia nostrum a accusantium reprehenderit obcaecati voluptate nisi tempora repudiandae
+    cupiditate sed. Provident est quam porro et repellat doloribus velit, illo iste sapiente eum minus fuga fugiat,
+    autem quidem. Vel illo odit obcaecati magni, ad minima dolor eum consectetur iure quis aut aperiam possimus repellat
+    laboriosam veniam! Dicta blanditiis rerum soluta reiciendis autem ducimus unde quibusdam totam, quod nesciunt porro
+    laborum delectus eum corporis recusandae. Eveniet odit molestias nulla? Tenetur facilis ipsum magni at distinctio?
+    Maiores dolorum recusandae iusto architecto veritatis mollitia officiis facilis quo quos, vel quod nemo
+    reprehenderit ipsum sint velit natus culpa, optio voluptates ad quaerat, nam eligendi animi sunt tempora? Dolorem
+    aspernatur accusantium culpa ducimus minus sapiente quasi consequatur impedit eaque molestias. Possimus eveniet
+    aliquam sequi velit officia illo ratione at, nisi doloribus, iusto eligendi fuga neque optio eaque odit fugit esse
+    itaque laborum magnam! Beatae modi, distinctio sint non quisquam a eos voluptatum hic alias excepturi praesentium
+    error nam nemo recusandae eius eligendi voluptatibus possimus porro. Nobis, impedit laudantium quam natus quidem
+    magnam aspernatur enim. Facere totam earum eaque quae aliquam, quod aperiam quos perspiciatis nihil dolorem debitis
+    deserunt veniam maxime quia nobis, numquam hic dicta voluptatem sint aspernatur itaque, necessitatibus sit. Aperiam
+    dolores repellendus et, nostrum aliquid nemo laudantium rerum, quidem sed aspernatur ipsum dicta. Distinctio nam
+    iste minima quod odit in dolor earum vel voluptatem debitis, consectetur harum voluptatibus voluptates aperiam
+    molestias laboriosam illum. Officiis cum eaque fuga ipsa necessitatibus. Dolores accusamus expedita, ad dolor amet
+    eveniet suscipit! Suscipit natus aliquam minima. Aliquam accusamus inventore reprehenderit illo accusantium
+    obcaecati nesciunt vel ducimus vitae rerum! Ipsum esse minima placeat ad pariatur nostrum illum suscipit odio,
+    aspernatur cum? Eaque ad error deleniti minus magnam mollitia aspernatur culpa a aliquam illo natus quod animi id
+    quae ullam quaerat soluta doloremque, quam nobis? Nemo eveniet dignissimos quasi soluta mollitia eaque ipsum, harum
+    in aliquam officia ea veritatis provident omnis alias numquam deserunt non tempora assumenda, quo quia quisquam
+    asperiores molestiae! Deleniti nesciunt itaque enim magnam amet cumque, ullam perspiciatis ipsa ab voluptatum odio
+    sequi similique aliquam dolorem voluptas iure veniam exercitationem ipsam, quis iste nemo. Deleniti, earum
+    voluptatum consequatur illo quas modi maxime dolores sed magni. Expedita quasi a unde enim officiis maiores deleniti
+    harum fugiat qui, voluptas provident omnis tenetur veritatis dolore earum dolorem deserunt repellat quibusdam.
+    Facilis sunt ab accusamus aut eos illo eius voluptate tempore? Eum ab neque perspiciatis alias! Facere distinctio
+    perspiciatis laborum enim eligendi dolore debitis similique! Nam, est nulla. Asperiores aut animi autem ducimus
+    corrupti, in a suscipit iure officia aliquam eos, excepturi officiis doloribus iusto quos dolorem rem magni impedit
+    blanditiis? Similique atque ducimus repudiandae, qui quis deserunt quae consectetur dicta dolores animi nam quisquam
+    optio voluptatem tenetur accusamus unde odit ullam facere, at adipisci suscipit. Officiis eaque placeat quam omnis
+    reprehenderit ipsum tempore molestiae aperiam reiciendis velit, sit pariatur laudantium dignissimos, natus eius.
+    Consectetur atque iste, itaque nihil hic fugit sint magni, neque suscipit odio minus possimus veniam nisi tempore
+    rem quae unde voluptatem! Tempore nisi alias asperiores facilis voluptatibus autem quibusdam a illo possimus fugit
+    rerum aliquid eveniet in doloribus ipsam aliquam, inventore reiciendis rem quaerat quae, perspiciatis, natus cum
+    totam libero. Illo maxime ratione aut laborum, adipisci consequatur. Accusantium odio, harum sunt omnis ex qui quis
+    cupiditate cumque ea exercitationem, minus esse aliquid, pariatur facilis. Tempore reiciendis totam, soluta
+    reprehenderit in assumenda neque? Id facilis quae mollitia praesentium dolor debitis natus ratione sapiente quisquam
+    a temporibus saepe incidunt, esse exercitationem voluptates dolore dicta beatae? Omnis quod explicabo dignissimos
+    eos molestiae. Explicabo laborum aliquam voluptatibus recusandae iure quod quia minima est veniam totam? Reiciendis,
+    placeat unde ratione, neque, nam sed necessitatibus commodi accusamus cumque velit nulla odio dolore fugit quas
+    excepturi tempora omnis praesentium eveniet accusantium quaerat voluptatum sit sint dolorum suscipit? A porro, omnis
+    hic perspiciatis, nam, quia beatae consectetur numquam molestiae voluptates officia dolore modi alias deserunt
+    nesciunt quidem dicta in! Accusantium dolore praesentium molestiae sed eum, distinctio, neque voluptatum sunt sit
+    soluta temporibus sapiente ducimus fugit provident porro rem nemo optio ad doloremque ipsam excepturi ab unde
+    obcaecati. Rem nisi tempora tempore sint atque vitae quisquam inventore vel nam quae cum velit doloremque, aperiam
+    soluta facilis quasi unde corrupti veritatis quidem quam reiciendis optio laudantium! Error sapiente provident
+    similique aliquid laborum? Minus.
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/inicio.js"></script>
+</body>
+
+</html>

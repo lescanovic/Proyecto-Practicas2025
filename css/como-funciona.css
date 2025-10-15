@@ -1,0 +1,76 @@
+.btn-como-funciona {
+    top: 20px;
+    left: 20px;
+    text-decoration: none;
+    background: #4c85ff;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 0 2px 6px rgba(237, 205, 205, 0.773);
+    position: relative;
+
+}
+
+.btn-como-funciona:hover {
+    background-color: #2f60d3;
+    color: #f2f0f0;
+    border: 2px solid #2f53d3;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(251, 247, 247, 0.952);
+}
+
+.section-funciona {
+    text-align: center;
+    margin: 80px;
+    color: rgb(28, 67, 159);
+
+}
+h3{
+    text-align:left;
+}
+
+.section-funciona h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    /* Espacio entre tarjetas */
+    justify-content: center;
+    /* Centra las tarjetas */
+}
+
+.card {
+    background: #93aadc;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px 25px;
+    width: 280px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-header {
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    background: #ffffff;
+    border-bottom: 2px solid #ddd;
+}
+
+.card-title {
+    color: #ffffff;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #ffffff;
+}
