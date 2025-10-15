@@ -1,74 +1,289 @@
-body {
-    font-family: Arial, sans-serif;
+:root {
+    --primary-color: linear-gradient(to top, #8121d6 0%, #A168d3 100%);
+    --secondary-color: #5EA877;
+    --accent-color: #5EA85E;
+}
+
+* {
     margin: 0;
-    padding: 20px;
-    background-color: rgb(255, 255, 255);
-}
-.btn-trabaje-con-nosotros {
-  margin: 20px;
-  text-decoration: none;
-  width: 100%;
-  padding: 10px;
-  background-color: #4c85ff;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
 }
 
-.section-trabaje {
+body {
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Navbar */
+.navbar {
+    background: var(--primary-color);
+    width: 100%;
+    padding: 10px 50px;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.navbar-brand img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Sección Hero */
+.hero-section {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    color: black;
+    padding: 30px 20px;
     text-align: center;
-    margin: 80px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: rgb(44, 64, 176);
-
-}
-h2{
-    font-size: 2.5em;
-    margin-bottom: 20px;
-}
-.cards-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px; /* Espacio entre tarjetas */
-  justify-content: center; /* Centra las tarjetas */
-}
-.card {
-  background:#93aadc ;
-  border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  padding: 30px 25px;
-  width: 280px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.card-header {
-  border-radius:30px ;
-  font-weight: bold;
-  font-size: 1.2rem;
-  background: #ffffff;
-  border-bottom: 2px solid #ddd;
 }
 
-.card-title {
-  color: #ffffff;
+.hero-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    font-weight: 700;
 }
 
-.card-text {
-  font-size: 1rem;
-  color: #ffffff;
+.hero-section p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto 25px;
+    color: #555;
 }
 
-.btn-postulate{
-  margin: 20px;
-  text-decoration: none;
-  width: 100%;
-  padding: 10px;  
-  background-color: #4c85ff;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
+.btn-register {
+    border-radius: 25px;
+    padding: 12px 25px;
+    font-weight: 600;
+    background: var(--secondary-color);
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
 
+.btn-register:hover {
+    background: var(--accent-color);
+    transform: scale(1.05);
+}
+
+/* Sección de Beneficios */
+.benefits-section {
+    padding: 30px 20px;
+    background: white;
+}
+
+.benefits-section h2 {
+    text-align: center;
+    color: black;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.benefit-card {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 15px;
+    padding: 25px;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+    border-color: #8121d6;
+    box-shadow: 0 8px 20px rgba(129, 33, 214, 0.3);
+}
+
+.benefit-card h5 {
+    color: black;
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.benefit-card p {
+    color: #555;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Formulario de Registro */
+.form-section {
+    padding: 30px 20px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    display: none;
+}
+
+.form-section.active {
+    display: block;
+}
+
+.form-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    padding: 25px 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.form-container h2 {
+    color: Black;
+    text-align: center;
+    margin-bottom: 8px;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.form-container .subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 25px;
+    font-size: 0.95rem;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    color: #333;
+    font-weight: 500;
+    margin-bottom: 6px;
+    font-size: 0.95rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 2px solid #dee2e6;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #5EA877;
+}
+
+.form-group .file-input-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    width: 100%;
+}
+
+.form-group .file-input-label {
+    width: 40%;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    color: black;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+    border: 1px solid #dee2e6;
+}
+
+.form-group .file-input-label:hover {
+    background: #5EA891;
+    color: white;
+}
+
+.form-group input[type="file"] {
+    position: absolute;
+    left: -9999px;
+}
+
+.file-name {
+    margin-top: 6px;
+    font-size: 0.85rem;
+    color: #666;
+    font-style: italic;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 12px;
+    background: var(--secondary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 15px;
+}
+
+.btn-submit:hover {
+    background: var(--accent-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(94, 168, 94, 0.4);
+}
+
+.btn-back {
+    display: inline-block;
+    margin-bottom: 15px;
+    color: red;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    font-size: 0.95rem;
+}
+
+.btn-back:hover {
+    color: blue;
+    transform: translateX(-5px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 20px;
+    }
+
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    .form-container {
+        padding: 20px 15px;
+    }
+
+    .benefits-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .form-group .file-input-label {
+        width: 100%;
+    }
 }

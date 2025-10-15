@@ -1,76 +1,257 @@
-.btn-como-funciona {
-    top: 20px;
-    left: 20px;
-    text-decoration: none;
-    background: #4c85ff;
-    color: white;
-    padding: 8px 16px;
-    border-radius: 5px;
-    font-weight: bold;
-    box-shadow: 0 2px 6px rgba(237, 205, 205, 0.773);
-    position: relative;
-
+:root {
+    --primary-color: linear-gradient(to top, #8121d6 0%, #A168d3 100%);
+    --secondary-color: #5EA877;
+    --accent-color: #5EA85E;
 }
 
-.btn-como-funciona:hover {
-    background-color: #2f60d3;
-    color: #f2f0f0;
-    border: 2px solid #2f53d3;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Eliminar estilos por defecto de enlaces */
+a {
+    text-decoration: none;
+}
+
+a:focus {
+    outline: none;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    background-color: rgba(251, 247, 247, 0.952);
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    -webkit-font-smoothing: antialiased;
 }
 
-.section-funciona {
+/* Navbar */
+.navbar {
+    background: var(--primary-color);
+    width: 100%;
+    padding: 10px 50px;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.navbar-brand img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Sección Hero */
+.hero-section {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 40px 20px;
     text-align: center;
-    margin: 80px;
-    color: rgb(28, 67, 159);
-
-}
-h3{
-    text-align:left;
 }
 
-.section-funciona h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-
+.hero-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: black;
 }
 
-.cards-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    /* Espacio entre tarjetas */
-    justify-content: center;
-    /* Centra las tarjetas */
-}
-
-.card {
-    background: #93aadc;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 30px 25px;
-    width: 280px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card-header {
-    border-radius: 30px;
-    font-weight: bold;
+.hero-section p {
     font-size: 1.2rem;
-    background: #ffffff;
-    border-bottom: 2px solid #ddd;
+    color: #555;
+    margin-bottom: 30px;
 }
 
-.card-title {
-    color: #ffffff;
+.button-group {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.card-text {
+.btn-switch {
+    padding: 12px 30px;
+    border-radius: 25px;
+    border: 2px solid #8121d6;
+    background: white;
+    color: #8121d6;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
     font-size: 1rem;
-    color: #ffffff;
+}
+
+.btn-switch:hover {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    transform: translateY(-2px);
+}
+
+.btn-switch.active {
+    background: var(--secondary-color);
+    color: white;
+    border-color: var(--secondary-color);
+}
+
+/* Sección de Pasos */
+.steps-section {
+    padding: 40px 20px;
+    background: white;
+    display: none;
+}
+
+.steps-section.active {
+    display: block;
+}
+
+.section-title {
+    text-align: center;
+    color: black;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.step-card {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 15px;
+    padding: 30px 20px;
+    height: 100%;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.step-card:hover {
+    transform: translateY(-5px);
+    border-color: #8121d6;
+    box-shadow: 0 8px 20px rgba(129, 33, 214, 0.3);
+}
+
+.step-number {
+    width: 50px;
+    height: 50px;
+    background: var(--secondary-color);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 auto 20px;
+}
+
+.step-card h4 {
+    color: black;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.step-card p {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.step-link {
+    color: #8121d6;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.step-link:hover {
+    color: #5f189e;
+    transform: translateX(5px);
+}
+
+/* Sección de Beneficios Extra */
+.benefits-extra-section {
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.benefits-extra-section h2 {
+    text-align: center;
+    color: black;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.benefit-extra-card {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    height: 100%;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.benefit-extra-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(129, 33, 214, 0.3);
+}
+
+.benefit-icon {
+    width: 60px;
+    height: 60px;
+    background: var(--secondary-color);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    margin: 0 auto 20px;
+}
+
+.benefit-extra-card h5 {
+    color: black;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.benefit-extra-card p {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 20px;
+    }
+
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    .step-card,
+    .benefit-extra-card {
+        margin-bottom: 20px;
+    }
+
+    .button-group {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .btn-switch {
+        width: 100%;
+    }
 }

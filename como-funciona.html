@@ -3,77 +3,160 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>¿Cómo funciona?</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Cómo Funciona? - HomeFix</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/como-funciona.css">
 </head>
 
 <body>
-    <a href="./inicio.html" class="btn-como-funciona">Volver</a>
-    <main>
-        <section class="section-funciona">
-            <h1> ¿Comó funciona nuestra app? </h1>
+    <!-- Barra de navegación -->
+    <header>
+        <div class="d-flex justify-content-center">
+            <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+                <a class="navbar-brand" href="./inicio.html" title="HomeFix - Servicios a Domicilio">
+                    <img src="./images/Logo.jpeg" alt="HomeFix Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./trabaje-con-nosotros.html">Trabajá con nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./como-funciona.html">¿Cómo funciona?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./iniciar-sesion.html">Ingresar</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
 
-            <h3> Como Cliente</h3>
-            <div class="cards-container">
-                <div class="card text bg-primary mb-3" style="max-width: 18rem;">
-                    <div class="card-body">
-                        <h4 class="card-title">Paso 1: </h4>
-                        <p class="card-text">Creamos tu cuenta en minutos y verificamos tu identidad.</p>
-                        <a href="./registrarse.html">Registrate</a>
+    <!-- Sección Hero -->
+    <section class="hero-section">
+        <div class="container">
+            <h1>¿Cómo funciona HomeFix?</h1>
+            <p>Conectamos profesionales con clientes de manera simple y segura</p>
+            <div class="button-group">
+                <button class="btn-switch active" onclick="showSection('cliente')">Como Cliente</button>
+                <button class="btn-switch" onclick="showSection('trabajador')">Como Trabajador</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Como Cliente -->
+    <section id="cliente-section" class="steps-section active">
+        <div class="container">
+            <h2 class="section-title">Como Cliente</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <h4>Registrate</h4>
+                        <p>Creamos tu cuenta en minutos y verificamos tu identidad.</p>
+                        <a href="./registrarse.html" class="step-link">Registrarse →</a>
                     </div>
                 </div>
-                <div class="card text bg-primary mb-3" style="max-width: 18rem;">
-                    <div class="card-body">
-                        <h4 class="card-title">Paso 2: Buscá un servicio</h4>
-                        <p class="card-text">Elegí la categoría (plomería, electricidad, limpieza, etc.).</p>
+                <div class="col-md-6 col-lg-3">
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <h4>Buscá un servicio</h4>
+                        <p>Elegí la categoría (plomería, electricidad, limpieza, etc.).</p>
                     </div>
                 </div>
-                <div class="card text bg-primary mb-3" style="max-width: 18rem;">
-                    <div class="card-body">
-                        <h4 class="card-title">Paso 3: Contratá con seguridad</h4>
-                        <p class="card-text">Todos los empleados están validados y con antecedentes revisados.</p>
+                <div class="col-md-6 col-lg-3">
+                    <div class="step-card">
+                        <div class="step-number">3</div>
+                        <h4>Contratá con seguridad</h4>
+                        <p>Todos los empleados están validados y con antecedentes revisados.</p>
                     </div>
                 </div>
-                <div class="card text bg-primary mb-3" style="max-width: 18rem;">
-                    <div class="card-body">
-                        <h4 class="card-title">Paso 4: Organizá tu agenda</h4>
-                        <p class="card-text">Coordiná horarios fácilmente y recibí cotización transparente.</p>
+                <div class="col-md-6 col-lg-3">
+                    <div class="step-card">
+                        <div class="step-number">4</div>
+                        <h4>Organizá tu agenda</h4>
+                        <p>Coordiná horarios fácilmente y recibí cotización transparente.</p>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <h3> Como Trabajador</h3>
-            <div class="cards-container">
-                <div class="card text bg-primary mb-3" style="max-width: 18rem;">
-                    <div class="card-body">
-                        <h4 class="card-title">Paso 1: </h4>
-                        <p class="card-text">Creamos tu cuenta en minutos y verificamos tu identidad.</p>
-                        <a href="./registrarse-trabajador.html">Registrate</a>
+    <!-- Sección Como Trabajador -->
+    <section id="trabajador-section" class="steps-section">
+        <div class="container">
+            <h2 class="section-title">Como Trabajador</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <h4>Registrate</h4>
+                        <p>Creá tu perfil profesional y verificamos tu identidad.</p>
+                        <a href="./trabaje-con-nosotros.html#registro" class="step-link">Registrarse →</a>
                     </div>
                 </div>
-                <div class="card text bg-primary mb-3" style="max-width: 18rem;">
-                    <div class="card-body">
-                        <h4 class="card-title">Paso 2: Buscá un servicio</h4>
-                        <p class="card-text">Elegí la categoría (plomería, electricidad, limpieza, etc.).</p>
+                <div class="col-md-6 col-lg-3">
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <h4>Recibí solicitudes</h4>
+                        <p>Los clientes te contactarán directamente por tus servicios.</p>
                     </div>
                 </div>
-                <div class="card text bg-primary mb-3" style="max-width: 18rem;">
-                    <div class="card-body">
-                        <h4 class="card-title">Paso 3: Contratá con seguridad</h4>
-                        <p class="card-text">Todos los empleados están validados y con antecedentes revisados.</p>
+                <div class="col-md-6 col-lg-3">
+                    <div class="step-card">
+                        <div class="step-number">3</div>
+                        <h4>Cotizá tu trabajo</h4>
+                        <p>Enviá presupuestos claros y aceptá los trabajos que prefieras.</p>
                     </div>
                 </div>
-                <div class="card text bg-primary mb-3" style="max-width: 18rem;">
-                    <div class="card-body">
-                        <h4 class="card-title">Paso 4: Organizá tu agenda</h4>
-                        <p class="card-text">Coordiná horarios fácilmente y recibí cotización transparente.</p>
+                <div class="col-md-6 col-lg-3">
+                    <div class="step-card">
+                        <div class="step-number">4</div>
+                        <h4>Gestioná tu agenda</h4>
+                        <p>Organizá tus citas, horarios y cobrá de manera segura.</p>
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
+
+    <!-- Sección de Ventajas -->
+    <section class="benefits-extra-section">
+        <div class="container">
+            <h2>Beneficios para todos</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="benefit-extra-card">
+                        <div class="benefit-icon">✓</div>
+                        <h5>Verificación de identidad</h5>
+                        <p>Todos los usuarios pasan por un proceso de validación.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="benefit-extra-card">
+                        <div class="benefit-icon">★</div>
+                        <h5>Sistema de calificaciones</h5>
+                        <p>Reseñas y valoraciones para garantizar calidad.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="benefit-extra-card">
+                        <div class="benefit-icon">💬</div>
+                        <h5>Comunicación directa</h5>
+                        <p>Chat y llamadas integradas en la plataforma.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/como-funciona.js"></script>
 </body>
-
-</html>
 
 </html>

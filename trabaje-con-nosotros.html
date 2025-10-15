@@ -4,46 +4,189 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabaje con Nosotros - HomeFix</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/trabaje-con-nosotros.css">
-    <title>Trabaje con nosotros</title>
 </head>
 
 <body>
-    <a href="./inicio.html" class="btn-trabaje-con-nosotros">Volver</a>
-    <main>
-        <section class="section-trabaje">
-            <h2> ¨ Unite a HomeFix ¨</h2>
+    <!-- Barra de navegación -->
+    <header>
+        <div class="d-flex justify-content-center">
+            <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+                <a class="navbar-brand" href="./inicio.html" title="HomeFix - Servicios a Domicilio">
+                    <img src="./images/Logo.jpeg" alt="HomeFix Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./trabaje-con-nosotros.html">Trabajá con nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./como-funciona.html">¿Cómo funciona?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./iniciar-sesion.html">Ingresar</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección Principal -->
+    <section id="info-section" class="hero-section">
+        <div class="container">
+            <h1>Sea parte de HomeFix</h1>
             <p>Únase a nuestra plataforma y conecte con clientes que necesitan sus servicios. Ofrecemos un entorno
                 seguro y confiable para que pueda crecer profesionalmente.</p>
+            <button class="btn-register" onclick="showForm()">Postulate Ahora</button>
+        </div>
+    </section>
 
-            <div class="cards-container">
-                <div class="card text-bg-primary mb-3" style="max-width: 18rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">CLIENTES VERIFICADOS</h5>
-                        <p class="card-text">Conectá con usuarios reales que necesitan tus servicios.
-                    </div>
+    <!-- Sección de Beneficios -->
+    <section id="benefits-section" class="benefits-section">
+        <div class="container">
+            <h2>¿Por qué trabajar con nosotros?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <h5>Clientes Verificados</h5>
+                    <p>Conectá con usuarios reales que necesitan tus servicios de manera segura.</p>
                 </div>
-                <div class="card text-bg-secondary mb-3" style="max-width: 18rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">AGENDA ORGANIZADA</h5>
-                        <p class="card-text">Administra tus contactos y evitá conflictos de citas.</p>
-                    </div>
+                <div class="benefit-card">
+                    <h5>Agenda Organizada</h5>
+                    <p>Administrá tus contactos y evitá conflictos de citas con nuestra herramienta.</p>
                 </div>
-                <div class="card text-bg-success mb-3" style="max-width: 18rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">COTIZACIÓN TRANSPARENTE</h5>
-                        <p class="card-text">Conoce tus ganancias antes de aceptar un trabajo.</p>
-                    </div>
+                <div class="benefit-card">
+                    <h5>Cotización Transparente</h5>
+                    <p>Conocé tus ganancias antes de aceptar un trabajo. Sin sorpresas.</p>
                 </div>
-                <div class="card text-bg-success mb-3" style="max-width: 18rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">BENEFICIOS</h5>
-                        <p class="card-text"> Seguridad garantizada, Calificaciones de clientes, Comunicación directa,
-                            Flexibilidad horaria
-                        </p>
+                <div class="benefit-card">
+                    <h5>Flexibilidad Horaria</h5>
+                    <p>Trabajá cuando quieras, con la libertad de elegir tus horarios.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulario de Registro -->
+    <section id="form-section" class="form-section">
+        <div class="container">
+            <div class="form-container">
+                <a href="#" class="btn-back" onclick="showInfo(); return false;">← Volver</a>
+                <h2>Registro de Trabajador</h2>
+                <p class="subtitle">Completá todos los datos para unirte a nuestro equipo profesional</p>
+
+                <form id="workerForm" onsubmit="handleSubmit(event)">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="fullname">Nombre y Apellido/s *</label>
+                                <input type="text" id="fullname" name="fullname" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="dni">DNI *</label>
+                                <input type="number" id="dni" name="dni" required>
+                            </div>
+                        </div>
                     </div>
-        </section>
-        <a href="./registrarse-trabajador.html" class="btn-postulate">Postulate ahora</a>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="birthdate">Fecha de Nacimiento *</label>
+                                <input type="date" id="birthdate" name="birthdate" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="phone">Teléfono de Contacto *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="specialty">Especialidad / Oficio *</label>
+                        <select id="specialty" name="specialty" required>
+                            <option value="">Seleccione una opción</option>
+                            <option value="plomero">Plomero / Fontanero</option>
+                            <option value="gasista">Gasista Matriculado</option>
+                            <option value="electricista">Electricista</option>
+                            <option value="albanil">Albañil</option>
+                            <option value="carpintero">Carpintero</option>
+                            <option value="pintor">Pintor</option>
+                            <option value="jardinero">Jardinero</option>
+                            <option value="limpieza">Servicio de Limpieza</option>
+                            <option value="profesor">Profesor Particular</option>
+                            <option value="peluquero">Peluquero/a</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="experience">Años de Experiencia</label>
+                                <input type="number" id="experience" name="experience" min="0" max="50">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="certificate">Certificado de Antecedentes *</label>
+                                <div class="file-input-wrapper">
+                                    <label for="certificate" class="file-input-label">
+                                        Seleccionar Archivo
+                                    </label>
+                                    <input type="file" id="certificate" name="certificate" accept=".pdf,.jpg,.jpeg,.png"
+                                        required onchange="updateFileName(this, 'certificate-name')">
+                                </div>
+                                <div id="certificate-name" class="file-name"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="description">Descripción de Servicios</label>
+                                <textarea id="description" name="description" rows="3"
+                                    placeholder="Cuéntanos sobre tu experiencia..."></textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="cv">Curriculum o CV *</label>
+                                <div class="file-input-wrapper">
+                                    <label for="cv" class="file-input-label">
+                                        Seleccionar Archivo
+                                    </label>
+                                    <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx" required
+                                        onchange="updateFileName(this, 'cv-name')">
+                                </div>
+                                <div id="cv-name" class="file-name"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn-submit">Enviar Solicitud</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/trabaje-con-nosotros.js"></script>
 </body>
 
 </html>
