@@ -45,4 +45,61 @@ document.querySelector('form').addEventListener('submit', function (e) {
     }
 });
 
-// Carrusel Empleados
+// Variables del carrusel
+let currentIndex = 0;
+let cardsToShow = 3;
+
+// Función para mover el carrusel
+function moveCarousel(direction) {
+    const track = document.getElementById('carouselTrack');
+    const cards = document.querySelectorAll('.worker-card');
+
+    if (!track || cards.length === 0) return;
+
+    // Obtener ancho real de la tarjeta + gap
+    const cardStyle = window.getComputedStyle(cards[0]);
+    const cardWidth = cards[0].offsetWidth;
+    const gap = 20; // gap definido en CSS
+    const moveDistance = cardWidth + gap;
+
+    // Calcular nuevo índice
+    currentIndex += direction;
+
+    // Calcular límites
+    const maxIndex = cards.length - cardsToShow;
+
+    // Limitar el índice
+    if (currentIndex < 0) {
+        currentIndex = 0;
+    } else if (currentIndex > maxIndex) {
+        currentIndex = maxIndex;
+    }
+
+    // Aplicar transformación
+    const translateX = -(currentIndex * moveDistance);
+    track.style.transform = `translateX(${translateX}px)`;
+}
+
+// Ajustar cantidad de tarjetas visibles según el tamaño de pantalla
+function updateCarouselSettings() {
+    const width = window.innerWidth;
+
+    if (width < 768) {
+        cardsToShow = 1;
+    } else if (width < 1024) {
+        cardsToShow = 2;
+    } else {
+        cardsToShow = 3;
+    }
+
+    // Reset posición al cambiar tamaño
+    currentIndex = 0;
+    const track = document.getElementById('carouselTrack');
+    if (track) {
+        track.style.transform = 'translateX(0px)';
+    }
+}
+
+// Event listeners
+window.addEventListener('resize', updateCarouselSettings);
+window.addEventListener('DOMContentLoaded', updateCarouselSettings);

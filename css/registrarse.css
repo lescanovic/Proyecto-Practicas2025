@@ -1,5 +1,5 @@
 :root {
-    --primary-color: linear-gradient(to top, #8121d6 0%, #A168d3 100%);
+    --primary-color: linear-gradient(135deg, #A168d3 0%, #8121d6 85%);
     --secondary-color: #5EA877;
     --accent-color: #5EA85E;
 }

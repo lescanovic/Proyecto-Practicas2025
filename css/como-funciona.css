@@ -1,5 +1,5 @@
 :root {
-    --primary-color: linear-gradient(to top, #8121d6 0%, #A168d3 100%);
+    --primary-color: linear-gradient(135deg, #A168d3 0%, #8121d6 85%);
     --secondary-color: #5EA877;
     --accent-color: #5EA85E;
 }
@@ -96,7 +96,7 @@ body {
 
 /* Sección de Pasos */
 .steps-section {
-    padding: 40px 20px;
+    padding: 20px 20px;
     background: white;
     display: none;
 }
@@ -109,7 +109,7 @@ body {
     text-align: center;
     color: black;
     font-size: 2rem;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     font-weight: 700;
 }
 
@@ -127,7 +127,6 @@ body {
 
 .step-card:hover {
     transform: translateY(-5px);
-    border-color: #8121d6;
     box-shadow: 0 8px 20px rgba(129, 33, 214, 0.3);
 }
 
@@ -174,7 +173,7 @@ body {
 
 /* Sección de Beneficios Extra */
 .benefits-extra-section {
-    padding: 40px 20px;
+    padding: 20px 20px;
     background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
 }
 
@@ -182,7 +181,7 @@ body {
     text-align: center;
     color: black;
     font-size: 2rem;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     font-weight: 700;
 }
 
