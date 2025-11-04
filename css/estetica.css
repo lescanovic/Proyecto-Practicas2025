@@ -1,0 +1,75 @@
+/* Estilos para las cards de trabajadores */
+.worker-card-custom {
+    border-radius: 50px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+
+}
+
+.worker-card-custom:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.worker-card-custom img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.worker-card-custom .card-body {
+    padding: 1.25rem;
+}
+
+.rating {
+    color: #f5b301;
+    font-weight: 700;
+}
+
+.card-title-small {
+    margin-bottom: 0.25rem;
+    font-weight: 600;
+}
+
+.btn-primary {
+    border-radius: 25px;
+    padding: 8px 25px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: scale(1.05);
+}
+h1{
+    text-align: center;
+}
+    
+
+/* Navbar */
+
+
+:root {
+  --primary-color: linear-gradient(135deg, #A168d3 0%, #8121d6 85%);
+  --secondary-color: #5EA877;
+  --accent-color: #5EA85E;
+}
+.navbar {
+  background: var(--primary-color);
+  width: 100%;
+  padding: 10px 50px;
+}
+
+.nav-link {
+  color: white !important;
+}
+
+.navbar-brand img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}

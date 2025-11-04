@@ -1,5 +1,23 @@
+// Función para verificar la sesión y actualizar el botón de login
+function actualizarBotonLogin() {
+    const usuarioActual = sessionStorage.getItem('usuarioActual');
+    const loginButton = document.querySelector('a[href="./iniciar-sesion.html"]');
+    
+    if (usuarioActual && loginButton) {
+        loginButton.textContent = 'Cerrar Sesión';
+        loginButton.href = '#';
+        loginButton.addEventListener('click', function(e) {
+            e.preventDefault();
+            sessionStorage.removeItem('usuarioActual');
+            window.location.reload();
+        });
+    }
+}
+
 // JavaScript para submenús
 document.addEventListener('DOMContentLoaded', function () {
+    // Verificar sesión al cargar la página
+    actualizarBotonLogin();
     // Manejar submenús en dispositivos táctiles
     const submenuItems = document.querySelectorAll('.dropdown-submenu');
 
@@ -221,7 +239,7 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 // FOOTER
-function handleNewsletter(e) {
+function handleNewsletter(e) {  
     e.preventDefault();
     const input = e.target.querySelector('input');
     const email = input.value;
