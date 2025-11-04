@@ -48,6 +48,15 @@ document.addEventListener('DOMContentLoaded', function () {
   const modalEl = document.getElementById('consultarModal'); //selecciona el modal y lo guarda en modalEl
   const bsModal = new bootstrap.Modal(modalEl); //Inicializa el modal
   const form = modalEl.querySelector('#consultarForm'); //selecciona el fomulario dentro de ese modal
+
+  // Limpiar backdrop cuando se cierra el modal de consulta
+  modalEl.addEventListener('hidden.bs.modal', function () {
+    const backdrops = document.getElementsByClassName('modal-backdrop');
+    while (backdrops.length > 0) {
+      backdrops[0].parentNode.removeChild(backdrops[0]);
+    }
+    document.body.classList.remove('modal-open');
+  });
   const alertContainer = modalEl.querySelector('#consultAlert'); //contenedor de alertas dentro del modal
 
   
@@ -74,6 +83,17 @@ document.addEventListener('DOMContentLoaded', function () {
     modalEl.querySelector('#consultarMessage').value = ''; // Limpia el campo "Mensaje"
     alertContainer.innerHTML = ''; // Limpia alertas previas
 
+    // Si existe un modal de perfil abierto, ocultarlo primero para evitar solapamiento
+    const profileModalEl = document.getElementById('profileModal');
+    if (profileModalEl) {
+      try {
+        const profileInstance = bootstrap.Modal.getInstance(profileModalEl) || new bootstrap.Modal(profileModalEl);
+        profileInstance.hide();
+      } catch (err) {
+        // ignore
+      }
+    }
+
     bsModal.show(); // Muestra el modal
   });
 
@@ -90,7 +110,7 @@ document.addEventListener('DOMContentLoaded', function () {
       return; 
     }
 
-    // Guardar en localStorage como simulación de envío
+      // Guardar en localStorage como simulación de envío
     try {
       const key = 'homefix_consultar_messages'; //clave para almacenar los mensajes
       const existing = JSON.parse(localStorage.getItem(key) || '[]'); //obtiene los mensajes existentes
@@ -101,7 +121,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
       // Limpiar mensaje y cerrar modal después de un momento
       modalEl.querySelector('#consultarMessage').value = ''; 
-      setTimeout(function () { bsModal.hide(); }, 900); //cierra el modal despues de 0.9 segundos
+      setTimeout(function () { 
+        bsModal.hide(); 
+        // Limpiar backdrop y restaurar scroll
+        document.body.classList.remove('modal-open');
+        const backdrops = document.getElementsByClassName('modal-backdrop');
+        while (backdrops.length > 0) {
+          backdrops[0].remove();
+        }
+      }, 900); //cierra el modal despues de 0.9 segundos
     } catch (err) {
       console.error(err);
       showAlert('Error al enviar el mensaje. Intenta nuevamente.', 'danger');
