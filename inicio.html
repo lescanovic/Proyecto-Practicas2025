@@ -521,12 +521,9 @@
                 <div class="footer-column">
                     <h3>Servicios</h3>
                     <ul class="footer-links">
-                        <li><a href="#">Plomería</a></li>
-                        <li><a href="#">Electricidad</a></li>
-                        <li><a href="#">Carpintería</a></li>
-                        <li><a href="#">Pintura</a></li>
-                        <li><a href="#">Jardinería</a></li>
-                        <li><a href="#">Limpieza</a></li>
+                        <li><a href="./subcategorias/plomeros-fontaneros.html">Plomería</a></li>
+                        <li><a href="./subcategorias/electricistas.html">Electricidad</a></li>
+                        <li><a href="./subcategorias/limpieza-general.html">Limpieza</a></li>
                     </ul>
                 </div>
 
@@ -534,25 +531,15 @@
                 <div class="footer-column">
                     <h3>Compañía</h3>
                     <ul class="footer-links">
-                        <li><a href="#">Sobre Nosotros</a></li>
+                        <li><a href="./trabaje-con-nosotros.html">Sobre Nosotros</a></li>
                         <li><a href="./como-funciona.html">Cómo Funciona</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Testimonios</a></li>
-                        <li><a href="#">Preguntas Frecuentes</a></li>
+                        <li><a href="./iniciar-sesion.html">Iniciar Sesión</a></li>
+                        <li><a href="./registrarse.html">Registrarse</a></li>
+
                     </ul>
                 </div>
 
-                <!-- Soporte Column -->
-                <div class="footer-column">
-                    <h3>Soporte</h3>
-                    <ul class="footer-links">
-                        <li><a href="#">Centro de Ayuda</a></li>
-                        <li><a href="#">Términos y Condiciones</a></li>
-                        <li><a href="#">Política de Privacidad</a></li>
-                        <li><a href="#">Seguridad</a></li>
-                        <li><a href="#">Contacto</a></li>
-                    </ul>
-                </div>
+
 
                 <!-- Contacto + Newsletter Column -->
                 <div class="footer-column">
@@ -650,76 +637,10 @@
     <script src="./js/perfilTrabajador.js"></script>
     <script src="./js/breadcrumb.js"></script>
     <script src="./js/perfilTrabajador.js"></script>
+    <script src="./js/filtro-de-busqueda.js"></script>
 
 
-<!-- Filtro de busqueda -->
-
-    <script>
-        document.addEventListener("DOMContentLoaded", () => { // esperar a que el DOM esté cargado
-
-            const input = document.querySelector(".search-input"); // campo de entrada
-            const boton = document.querySelector(".search-btn"); //busca el boton con la clase search-btn
-
-            const box = document.getElementById("resultadosBusqueda"); // caja de resultados
-            const lista = document.getElementById("listaResultados"); // lista de resultados
-
-            // buscador
-            boton.addEventListener("click", () => { //cuando se hace click en el boton de buscar
-
-                let q = input.value.toLowerCase().trim(); // obtener el valor del campo de entrada y convertirlo a minúsculas
-
-                if (q.length == 0) { //si el campo de búsqueda está vacío
-                    box.style.display = "none"; //oculta la caja de resultados
-                    return; // salir de la función
-                }
-
-                // direcciones de páginas a buscar
-                const paginas = [
-                    { nombre: "albañileria", url: "./subcategorias/albañileria.html" },
-                    { nombre: "plomeria", url: "./subcategorias/plomeros-fontaneros.html" },
-                    { nombre: "electricista", url: "./subcategorias/electricistas.html" },
-                    { nombre: "clases", url: "./subcategorias/nivel-primario.html" },
-                    { nombre: "piscinas", url: "./subcategorias/limpieza-piscinas.html" },
-                    { nombre: "perros", url: "./categorias/mascotas.html" },
-                    { nombre: "animador", url: "./subcategorias/animacion-entretenimiento.html" },
-                    { nombre: "gasista", url: "./subcategorias/gasistas.html" },
-                    { nombre: "heladeras", url: "./subcategorias/heladeras.html" },
-                    { nombre: "albañil", url: "./subcategorias/albañileria.html" },
-                    { nombre: "plomero", url: "./subcategorias/plomeros-fontaneros.html" },
-                    { nombre: "profesor (nivel secundario)", url: "./subcategorias/nivel-secundario" },
-                    { nombre: "profesor (nivel primario)", url: "./subcategorias/nivel-primario" },
-                    { nombre: "peluquero", url: "./subcategorias/peluqueria.html" },
-                    { nombre: "lavarropas", url: "./subcategorias/lavarropas.html" },
-                    { nombre: "paseador", url: "./subcategorias/paseo-ejercicio.html" },
-                    { nombre: "adiestrador", url: "./subcategorias/adiestramiento.html" },
-                    { nombre: "catering", url: "./subcategorias/alimentacion-bebidas.html" },
-                     { nombre: "peluquero", url: "./subcategorias/peluqueria.html" },
-                      { nombre: "barbero", url: "./subcategorias/barberia.html" },
-                       { nombre: "piletas", url: "./subcategorias/limpieza-pisicinas.html" },
-
-
-
-
-                ];
-
-                // buscar coincidencias
-                let encontrados = paginas.filter(p => p.nombre.includes(q)); //filtra las páginas que contienen la consulta de búsqueda
-
-                lista.innerHTML = ""; //limpia la lista de resultados
-
-                if (encontrados.length == 0) {
-                    lista.innerHTML = "<p>No se encontraron resultados.</p>"; //si no hay resultados, muestra este mensaje
-                } else {
-                    encontrados.forEach(p => {
-                        lista.innerHTML += `<p><a href="${p.url}">${p.nombre}</a></p>`; //agrega cada resultado a la lista como un enlace
-                    })
-                }
-
-                box.style.display = "block"; //muestra la caja de resultados
-            });
-
-        });
-    </script>
+    
 
 </body>
 
